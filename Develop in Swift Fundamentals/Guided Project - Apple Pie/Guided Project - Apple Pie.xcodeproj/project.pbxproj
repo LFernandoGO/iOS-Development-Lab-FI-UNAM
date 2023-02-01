@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB29467E298AE5C000720288 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29467D298AE5C000720288 /* Game.swift */; };
 		FB4F42042989B29B006603E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F42032989B29B006603E6 /* AppDelegate.swift */; };
 		FB4F42062989B29B006603E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F42052989B29B006603E6 /* SceneDelegate.swift */; };
 		FB4F42082989B29B006603E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4F42072989B29B006603E6 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB29467D298AE5C000720288 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		FB4F42002989B29B006603E6 /* Guided Project - Apple Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guided Project - Apple Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4F42032989B29B006603E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4F42052989B29B006603E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				FB4F42032989B29B006603E6 /* AppDelegate.swift */,
 				FB4F42052989B29B006603E6 /* SceneDelegate.swift */,
 				FB4F42072989B29B006603E6 /* ViewController.swift */,
+				FB29467D298AE5C000720288 /* Game.swift */,
 				FB4F42092989B29B006603E6 /* Main.storyboard */,
 				FB4F420C2989B29D006603E6 /* Assets.xcassets */,
 				FB4F420E2989B29D006603E6 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				FB4F42082989B29B006603E6 /* ViewController.swift in Sources */,
 				FB4F42042989B29B006603E6 /* AppDelegate.swift in Sources */,
 				FB4F42062989B29B006603E6 /* SceneDelegate.swift in Sources */,
+				FB29467E298AE5C000720288 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
