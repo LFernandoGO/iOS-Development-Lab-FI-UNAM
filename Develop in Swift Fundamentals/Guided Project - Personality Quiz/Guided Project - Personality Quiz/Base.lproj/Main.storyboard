@@ -99,21 +99,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="Mg4-9W-QsQ" eventType="touchUpInside" id="zT8-0X-ZwK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6d-Gx-CVx">
                                         <rect key="frame" x="0.0" y="54.5" width="374" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="Mg4-9W-QsQ" eventType="touchUpInside" id="zpY-bC-qqI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCJ-dc-ZQz">
                                         <rect key="frame" x="0.0" y="109" width="374" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="Mg4-9W-QsQ" eventType="touchUpInside" id="dgc-Sw-Rjs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfz-NW-BlB">
                                         <rect key="frame" x="0.0" y="163.5" width="374" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="Mg4-9W-QsQ" eventType="touchUpInside" id="BFX-Kh-55E"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -180,6 +192,9 @@
                                         <rect key="frame" x="0.0" y="204" width="374" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="Mg4-9W-QsQ" eventType="touchUpInside" id="daz-RP-gII"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -245,6 +260,25 @@
                     </view>
                     <navigationItem key="navigationItem" id="7oG-GA-4ZN"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="C4O-gN-lM6" id="Jwk-j9-Ogs"/>
+                        <outlet property="multiLabel2" destination="dtJ-CG-TBM" id="aBT-Gn-6FS"/>
+                        <outlet property="multiLabel3" destination="H8b-46-GAS" id="ObW-Fb-nKm"/>
+                        <outlet property="multiLabel4" destination="H0d-b8-QLf" id="vdb-IH-BJ6"/>
+                        <outlet property="multiSwitch1" destination="VQZ-Nb-2Ab" id="PRf-Jl-UYa"/>
+                        <outlet property="multiSwitch2" destination="pkL-B2-I3t" id="w63-Bc-CcZ"/>
+                        <outlet property="multiSwitch3" destination="dl8-Rv-UJ3" id="Fqw-1j-Izu"/>
+                        <outlet property="multiSwitch4" destination="SMj-0o-L1F" id="EVj-Hi-omE"/>
+                        <outlet property="multipleStackView" destination="WSH-za-BM2" id="DDw-2H-nHG"/>
+                        <outlet property="questionLabel" destination="vx5-WM-bxf" id="WLW-QX-ehN"/>
+                        <outlet property="questionProgressView" destination="k5M-cD-5SN" id="Wys-Gd-1TD"/>
+                        <outlet property="rangedLabel1" destination="eOk-PD-xBK" id="7Xm-YK-sRv"/>
+                        <outlet property="rangedLabel2" destination="1at-wF-fy9" id="oAG-XM-sL7"/>
+                        <outlet property="rangedStackView" destination="PJ7-b1-F3W" id="1es-eK-tP0"/>
+                        <outlet property="singleButton1" destination="9fW-mW-69O" id="kaK-YX-PQy"/>
+                        <outlet property="singleButton2" destination="R6d-Gx-CVx" id="aHm-Pl-9KU"/>
+                        <outlet property="singleButton3" destination="XCJ-dc-ZQz" id="Vyi-L2-yTQ"/>
+                        <outlet property="singleButton4" destination="Dfz-NW-BlB" id="IAk-5g-SC9"/>
+                        <outlet property="singleStackView" destination="1s4-Yh-57J" id="e11-Aj-kMh"/>
                         <segue destination="yTW-yx-qtR" kind="show" identifier="Results" id="5Nu-v0-iWg"/>
                     </connections>
                 </viewController>
