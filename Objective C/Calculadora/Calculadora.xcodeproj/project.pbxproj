@@ -170,7 +170,8 @@
 				FB3E6C2F299AB6190096AF78 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = Calculadora;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
