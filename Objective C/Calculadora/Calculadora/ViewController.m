@@ -8,6 +8,11 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)numberButton:(id)sender;
+- (IBAction)operation:(id)sender;
+- (IBAction)clearButton:(id)sender;
+- (IBAction)resultButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *numbersLabel;
 
 @end
 
@@ -19,4 +24,15 @@
 }
 
 
+- (IBAction)resultButton:(id)sender {
+}
+
+- (IBAction)clearButton:(id)sender {
+}
+
+- (IBAction)operation:(id)sender {
+}
+
+- (IBAction)numberButton:(id)sender {
+}
 @end
