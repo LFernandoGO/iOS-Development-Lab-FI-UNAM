@@ -2,7 +2,7 @@
 //  ViewController.m
 //  Calculadora
 //
-//  Created by alumno on 13/02/23.
+//  Created by Fernando Gutierrez on 13/02/23.
 //
 
 #import "ViewController.h"
@@ -12,6 +12,7 @@
     NSString *value2;
     NSString *operation;
     int result;
+    float resultD;
 }
 - (IBAction)numberButton:(UIButton*)sender;
 - (IBAction)operation:(UIButton*)sender;
@@ -40,10 +41,36 @@
         result = value1.intValue + value2.intValue;
         _numbersLabel.text = [@(result) stringValue];
     }
+    if([operation isEqual:(@"-")]){
+        value2 = _numbersLabel.text;
+        _numbersLabel.text = @"";
+        result = value1.intValue - value2.intValue;
+        _numbersLabel.text = [@(result) stringValue];
+    }
+    if([operation isEqual:(@"×")]){
+        value2 = _numbersLabel.text;
+        _numbersLabel.text = @"";
+        result = (value1.intValue * value2.intValue);
+        _numbersLabel.text = [@(result) stringValue];
+    }
+    if([operation isEqual:(@"÷")]){
+        value2 = _numbersLabel.text;
+        _numbersLabel.text = @"";
+        if (value2 == 0){
+            _numbersLabel.text = @"Error";
+        }
+        else{
+            resultD = (value1.intValue / value2.intValue);
+            _numbersLabel.text = [@(resultD) stringValue];
+        }
+    }
 }
 
 - (IBAction)clearButton:(UIButton*)sender {
     _numbersLabel.text = @"";
+    value1 = 0;
+    value2 = 0;
+    result = 0;
 }
 
 - (IBAction)operation:(UIButton*)sender {
@@ -60,7 +87,7 @@
     if([sender.titleLabel.text isEqual:(@"×")]){
         value1 = _numbersLabel.text;
         _numbersLabel.text = @"";
-        operation = @"x";
+        operation = @"×";
     }
     if([sender.titleLabel.text isEqual:(@"÷")]){
         value1 = _numbersLabel.text;
