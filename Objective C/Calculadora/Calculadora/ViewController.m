@@ -7,7 +7,12 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    NSString *value1;
+    NSString *value2;
+    NSString *operation;
+    int result;
+}
 - (IBAction)numberButton:(UIButton*)sender;
 - (IBAction)operation:(UIButton*)sender;
 - (IBAction)clearButton:(UIButton*)sender;
@@ -29,7 +34,12 @@
 }
 
 - (IBAction)resultButton:(UIButton*)sender {
-    
+    if([operation isEqual:(@"+")]){
+        value2 = _numbersLabel.text;
+        _numbersLabel.text = @"";
+        result = value1.intValue + value2.intValue;
+        _numbersLabel.text = [@(result) stringValue];
+    }
 }
 
 - (IBAction)clearButton:(UIButton*)sender {
@@ -37,31 +47,28 @@
 }
 
 - (IBAction)operation:(UIButton*)sender {
-    NSString *value1;
-    NSString *value2;
-    NSString *operation;
-    NSString *resultLabel;
-    int result;
-    if([_numbersLabel.text isEqual:(@"")]){
+    if([sender.titleLabel.text isEqual:(@"+")]){
+        value1 = _numbersLabel.text;
         _numbersLabel.text = @"";
-    }else{
-        if([sender.titleLabel.text isEqual:(@"+")]){
-            value1 = _numbersLabel.text;
-            _numbersLabel.text = @"";
-            operation = @"+";
-        }
-        if([sender.titleLabel.text isEqual:(@"-")]){
-            value2 = _numbersLabel.text;
-            if([operation isEqual:(@"+")]){
-                result = (value1.intValue + value2.intValue);
-                printf("%d", result);
-                resultLabel = [@(result) stringValue];
-                _numbersLabel.text = resultLabel;
-            }
-        }
-        
+        operation = @"+";
+    }
+    if([sender.titleLabel.text isEqual:(@"-")]){
+        value1 = _numbersLabel.text;
+        _numbersLabel.text = @"";
+        operation = @"-";
+    }
+    if([sender.titleLabel.text isEqual:(@"×")]){
+        value1 = _numbersLabel.text;
+        _numbersLabel.text = @"";
+        operation = @"x";
+    }
+    if([sender.titleLabel.text isEqual:(@"÷")]){
+        value1 = _numbersLabel.text;
+        _numbersLabel.text = @"";
+        operation = @"÷";
     }
 }
+
 
 - (IBAction)numberButton:(UIButton*)sender {
     NSString *text;
