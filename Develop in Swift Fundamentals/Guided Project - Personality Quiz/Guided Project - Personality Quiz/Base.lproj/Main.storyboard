@@ -100,7 +100,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
-                                            <action selector="singleAnswerButtonPressed:" destination="Mg4-9W-QsQ" eventType="touchUpInside" id="zT8-0X-ZwK"/>
+                                            <action selector="singleAnswerButtonPressed:" destination="Mg4-9W-QsQ" eventType="touchUpInside" id="UdW-SA-hkW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6d-Gx-CVx">
@@ -225,6 +225,9 @@
                                         <rect key="frame" x="0.0" y="90.5" width="374" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed:" destination="Mg4-9W-QsQ" eventType="touchUpInside" id="zrQ-WA-5fG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -273,13 +276,14 @@
                         <outlet property="questionProgressView" destination="k5M-cD-5SN" id="Wys-Gd-1TD"/>
                         <outlet property="rangedLabel1" destination="eOk-PD-xBK" id="7Xm-YK-sRv"/>
                         <outlet property="rangedLabel2" destination="1at-wF-fy9" id="oAG-XM-sL7"/>
+                        <outlet property="rangedSlider" destination="20G-TA-C5E" id="Kxg-UX-DQC"/>
                         <outlet property="rangedStackView" destination="PJ7-b1-F3W" id="1es-eK-tP0"/>
                         <outlet property="singleButton1" destination="9fW-mW-69O" id="kaK-YX-PQy"/>
                         <outlet property="singleButton2" destination="R6d-Gx-CVx" id="aHm-Pl-9KU"/>
                         <outlet property="singleButton3" destination="XCJ-dc-ZQz" id="Vyi-L2-yTQ"/>
                         <outlet property="singleButton4" destination="Dfz-NW-BlB" id="IAk-5g-SC9"/>
                         <outlet property="singleStackView" destination="1s4-Yh-57J" id="e11-Aj-kMh"/>
-                        <segue destination="yTW-yx-qtR" kind="show" identifier="Results" id="5Nu-v0-iWg"/>
+                        <segue destination="yTW-yx-qtR" kind="show" identifier="Results" destinationCreationSelector="showResults:" id="5Nu-v0-iWg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6w0-PL-Nw8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
