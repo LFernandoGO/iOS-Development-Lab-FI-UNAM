@@ -65,6 +65,9 @@
                                                 <state key="normal" title="%">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="percentButton:" destination="tbX-ax-vNM" eventType="touchUpInside" id="Wil-RI-mjF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWI-vz-dy4">
                                                 <rect key="frame" x="311.5" y="0.0" width="102.5" height="140.5"/>

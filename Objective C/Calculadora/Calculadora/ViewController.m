@@ -19,7 +19,7 @@
 - (IBAction)clearButton:(UIButton*)sender;
 - (IBAction)resultButton:(UIButton*)sender;
 - (IBAction)dotButton:(UIButton *)sender;
-
+- (IBAction)percentButton:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *numbersLabel;
 @end
 
@@ -33,6 +33,16 @@
 
 - (void) updateView{
     _numbersLabel.text = @"";
+}
+
+- (IBAction)percentButton:(UIButton *)sender {
+    if([_numbersLabel.text isEqual:(@"")]){
+        _numbersLabel.text = _numbersLabel.text;
+    }else{
+        value1 = _numbersLabel.text;
+        result = value1.doubleValue/100;
+        _numbersLabel.text = [@(result) stringValue];
+    }
 }
 
 - (IBAction)dotButton:(UIButton *)sender {
