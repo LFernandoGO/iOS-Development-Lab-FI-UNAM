@@ -250,6 +250,9 @@
                                                         <state key="normal" title=".">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="dotButton:" destination="tbX-ax-vNM" eventType="touchUpInside" id="8ae-Bi-Cde"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgY-nZ-lwE">
                                                         <rect key="frame" x="104" y="0.0" width="102.5" height="140.5"/>
@@ -285,16 +288,6 @@
                     </view>
                     <connections>
                         <outlet property="numbersLabel" destination="gLp-xI-FMp" id="I14-Z2-XtD"/>
-                        <outletCollection property="numberButtonOutlet" destination="Hpe-If-CDR" id="rnL-Pc-8TG"/>
-                        <outletCollection property="numberButtonOutlet" destination="WVd-92-E6Q" id="Nsi-XQ-Lwd"/>
-                        <outletCollection property="numberButtonOutlet" destination="oKG-Ji-zLh" id="lgr-e3-oGW"/>
-                        <outletCollection property="numberButtonOutlet" destination="NwU-Z9-3zo" id="6MA-uf-0IK"/>
-                        <outletCollection property="numberButtonOutlet" destination="Vav-h3-yVa" id="uVf-sm-mXh"/>
-                        <outletCollection property="numberButtonOutlet" destination="pMg-Il-XYt" id="yut-If-nzd"/>
-                        <outletCollection property="numberButtonOutlet" destination="Dkk-4m-U9G" id="X5f-XP-lWE"/>
-                        <outletCollection property="numberButtonOutlet" destination="1M7-IH-V7n" id="430-rR-Rzj"/>
-                        <outletCollection property="numberButtonOutlet" destination="xHX-2f-MCg" id="sAy-cy-lQV"/>
-                        <outletCollection property="numberButtonOutlet" destination="Cbt-VN-jgx" id="jpe-fB-TmB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kn-DF-irH" sceneMemberID="firstResponder"/>
